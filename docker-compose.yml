@@ -1,0 +1,14 @@
+nginx:
+   build: Nginx/
+   links: 
+      - jenkins
+   ports: 
+      - "80:80"
+
+jenkins:
+    build: Jenkins/
+    ports:
+        - "8080:8080"
+    volumes:
+    - /jenkins:/var/jenkins_home
+ 
