@@ -3,7 +3,7 @@ nginx:
    links: 
       - jenkins
    ports: 
-      - "80:80"
+      - "81:81"
 
 jenkins:
     build: Jenkins/
